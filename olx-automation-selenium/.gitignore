@@ -1,0 +1,34 @@
+# Node modules
+node_modules/
+
+# Dependency directories
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test screenshots i artifacts
+screenshots/
+*.png
+*.jpg
+
+# IDE specifični fajlovi
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS specifični fajlovi
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+
+# Build files
+dist/
+build/
+
+# Logs
+logs/
+*.log

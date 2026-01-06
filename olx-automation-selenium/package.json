@@ -1,0 +1,20 @@
+{
+  "name": "olx-automation-selenium",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "mocha": "^11.7.5",
+    "selenium-webdriver": "^4.39.0"
+  },
+  "devDependencies": {
+    "chai": "^6.2.2"
+  }
+}
