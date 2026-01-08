@@ -4,7 +4,7 @@ import { setMobileViewport, closeCookiePopup, selectMobilniUredjaji, openDropdow
 
 describe("OLX - Testovi kombinovanja filtera", function () {
     let driver;
-
+    this.timeout(30000);
     beforeEach(async function () {
         driver = await new Builder().forBrowser(Browser.CHROME).build();
         await setMobileViewport(driver);

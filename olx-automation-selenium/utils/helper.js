@@ -15,7 +15,7 @@ export async function closeCookiePopup(driver) {
 
     const acceptButton = await driver.wait(
       until.elementLocated(By.id('accept-btn')),
-      10000
+      15000
     );
     
     await driver.wait(until.elementIsVisible(acceptButton), 5000);

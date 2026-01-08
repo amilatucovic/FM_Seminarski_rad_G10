@@ -4,7 +4,7 @@ import { setMobileViewport, closeCookiePopup, findOlxSearchInput } from "../util
 
 describe("OLX - Testovi pretrage", function () {
   let driver;
-
+  this.timeout(30000);
   beforeEach(async function () {
     driver = await new Builder().forBrowser(Browser.CHROME).build();
     await setMobileViewport(driver);
@@ -98,8 +98,6 @@ describe("OLX - Testovi pretrage", function () {
   // TC-EP-007: Pretraga po postojećoj kategoriji - Nekretnine
   it("TC-EP-007: Pretraga po kategoriji - Nekretnine", async function () {
 
-    this.timeout(30000);
-
     const categoriesIcon = await driver.wait(
       until.elementLocated(By.css('.svg-wrapper.main-category-icon')),
       15000
@@ -174,7 +172,6 @@ describe("OLX - Testovi pretrage", function () {
 
   // TC-STT-033: Pretraga po ključnoj riječi sa validnim unosom bez pronađenih parametara
   it("TC-STT-033: Pretraga nepostojećeg proizvoda - Rossen šampon keratin", async function () {
-    this.timeout(30000);
     const searchInput = await findOlxSearchInput(driver);
 
     await searchInput.clear();
